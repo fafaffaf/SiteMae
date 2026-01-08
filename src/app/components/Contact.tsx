@@ -28,22 +28,22 @@ export function Contact() {
     {
       icon: MapPin,
       title: 'Endereço',
-      content: 'Av. Paulista, 1000 - Conj. 1502\nBela Vista, São Paulo - SP\nCEP: 01310-100'
+      content: 'Em breve divulgaremos nosso endereço físico.'
     },
     {
       icon: Phone,
       title: 'Telefone',
-      content: '(11) 3456-7890\n(11) 98765-4321'
+      content: '(11) 99823-7397\n(11) 98420-8056'
     },
     {
       icon: Mail,
       title: 'E-mail',
-      content: 'contato@silvaassociados.com.br\natendimento@silvaassociados.com.br'
+      content: 'valdison_2008@hotmail.com\nmelissa.carla@hotmail.com'
     },
     {
       icon: Clock,
       title: 'Horário',
-      content: 'Segunda a Sexta: 9h às 18h\nSábado: 9h às 13h'
+      content: 'Segunda a Sexta: 9h às 18h'
     }
   ];
 
@@ -135,6 +135,7 @@ export function Contact() {
                   <option value="familia">Direito de Família</option>
                   <option value="civil">Direito Civil</option>
                   <option value="penal">Direito Penal</option>
+                  <option value="assessoria">Assessoria Jurídica</option>
                   <option value="outro">Outro</option>
                 </select>
               </div>

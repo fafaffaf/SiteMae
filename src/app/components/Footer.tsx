@@ -10,11 +10,12 @@ export function Footer() {
       { label: 'Áreas de Atuação', href: '#areas' },
     ],
     servicos: [
-      { label: 'Assessoria Jurídica', href: '#' },
+      { label: 'Assessoria e Consultoria Jurídica', href: 'https://wa.me/5511984208056?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20assessoria%20e%20consultoria%20jurídica' },
+      { label: 'Palestra', href: 'https://wa.me/5511984208056?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20as%20palestras%20de%20vocês' },
+      { label: 'Formações', href: 'https://wa.me/5511984208056?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20as%20formações%20' },
     ],
     contato: [
       { label: 'Fale Conosco', href: '#contact' },
-      { label: 'Trabalhe Conosco', href: '#' },
     ]
   };
 
@@ -35,7 +36,7 @@ export function Footer() {
               </div>
             </div>
             <p className="text-[#DCC48F]/70 text-sm mb-4">
-              Excelência jurídica com mais de 25 anos de tradição, 
+              Excelência jurídica com mais de 10 anos de tradição, 
               protegendo os direitos e interesses de nossos clientes.
             </p>
             <div className="flex gap-3">
@@ -73,6 +74,8 @@ export function Footer() {
                 <li key={index}>
                   <a
                     href={link.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="text-[#DCC48F]/70 hover:text-[#AC8B57] transition-colors text-sm"
                   >
                     {link.label}

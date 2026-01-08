@@ -57,8 +57,8 @@ export function About() {
               física ou jurídica.
             </p>
             <p className="text-gray-700 leading-relaxed">
-              Nossa missão é fornecer assessoria jurídica de alto nível, pautada pela ética, 
-              transparência e compromisso com os melhores resultados.
+              Nossa missão é fornecer assessoria jurídica de alto nível, pautada pela ética e 
+              transparência.
             </p>
           </div>
 

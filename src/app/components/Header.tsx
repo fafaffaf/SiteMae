@@ -31,16 +31,11 @@ export function Header({ activeSection, setActiveSection }: HeaderProps) {
   return (
     <header className="bg-[#5E0D13] text-white sticky top-0 z-50 shadow-lg border-b-2 border-[#AC8B57]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center py-4">
+        <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <div className="flex items-center gap-3 cursor-pointer" onClick={() => handleNavClick('home')}>
-            <div className="bg-[#AC8B57] p-2 rounded-md">
-              <Scale className="w-6 h-6 text-[#2E0506]" />
-            </div>
-            <div>
-              <h1 className="text-[#DCC48F] text-xl tracking-wide">Pereira & Silva</h1>
-              <p className="text-[#AC8B57] text-xs">Advocacia</p>
-            </div>
+          <div className="flex items-center gap-1 cursor-pointer -ml-60" onClick={() => handleNavClick('home')}>
+            <img src="/assets/LetrasLogo.png" alt="Pereira & Silva Advocacia"  className="h-30 -my-2"
+            />
           </div>
 
           {/* Desktop Navigation */}

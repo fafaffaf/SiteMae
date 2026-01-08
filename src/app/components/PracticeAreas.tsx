@@ -10,17 +10,17 @@ export function PracticeAreas() {
     {
       icon: Home,
       title: 'Direito de Família',
-      description: 'Divórcio, inventário, guarda de menores e pensão alimentícia com sensibilidade.'
+      description: 'Divórcio; inventário; regulamentação de guarda e convivência; alimentos.'
     },
     {
       icon: FileText,
       title: 'Direito Civil',
-      description: 'Ações de indenização, contratos, responsabilidade civil e direito do consumidor.'
+      description: 'Ações de indenização; contratos; responsabilidade civil; direito do consumidor.'
     },
     {
       icon: Gavel,
       title: 'Direito Penal',
-      description: 'Defesa em processos criminais, consultoria e assessoria jurídica penal.'
+      description: 'Defesa em processos criminais; consultoria e assessoria jurídica penal.'
     }
   ];
 
@@ -59,9 +59,6 @@ export function PracticeAreas() {
                 <p className="text-gray-600 leading-relaxed">
                   {area.description}
                 </p>
-                <button className="mt-4 text-[#AC8B57] hover:text-[#70522B] transition-colors">
-                  Saiba mais →
-                </button>
               </div>
             );
           })}
@@ -76,9 +73,14 @@ export function PracticeAreas() {
             Nossa equipe está preparada para atender diversas outras demandas jurídicas. 
             Entre em contato para uma consulta personalizada.
           </p>
-          <button className="bg-[#AC8B57] hover:bg-[#DCC48F] text-[#2E0506] px-8 py-3 rounded-lg transition-all">
+          <a 
+            href="https://wa.me/5511984208056?text=Olá,%20gostaria%20de%20falar%20com%20um%20advogado" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="inline-block bg-[#AC8B57] hover:bg-[#DCC48F] text-[#2E0506] px-8 py-3 rounded-lg transition-all font-medium"
+          >
             Fale com um Advogado
-          </button>
+          </a>
         </div>
       </div>
     </section>

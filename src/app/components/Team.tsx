@@ -1,21 +1,24 @@
 import { Linkedin, Mail } from 'lucide-react';
 import { ImageWithFallback } from './image/ImageWithFallback';
+import Advogado1 from '/assets/Advogado1.jpeg';
+import Advogado2 from '/assets/Advogada2.jpeg';
+
 
 export function Team() {
   const teamMembers = [
     {
-      name: 'Dr. Valdison Pereira',
+      name: 'Dr. Valdison da Anunciação Pereira',
       role: 'Sócio',
-      specialty: 'Direito Penal',
-      image: 'https://images.unsplash.com/photo-1658249682512-1bb162538ba9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtYWxlJTIwbGF3eWVyJTIwcHJvZmVzc2lvbmFsfGVufDF8fHx8MTc2NzcxMzgyM3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-      bio: 'OAB/SP 123.456 - Especialista em direito empresarial com MBA em gestão tributária.'
+      specialty: ['Direito Penal', 'Direito Previdenciário', 'Direito Trabalhista', 'Ato Infracional'],
+      image: Advogado1,
+      bio: 'OAB/SP 398.623 - Especialista em direito criminal e previdenciário.'
     },
     {
       name: 'Dra. Melissa Carla Silva',
       role: 'Sócia',
-      specialty: 'Direito Civil e Família',
-      image: 'https://images.unsplash.com/photo-1584556326561-c8746083993b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxidXNpbmVzcyUyMHdvbWFuJTIwbGF3eWVyfGVufDF8fHx8MTc2NzczNjA1NXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-      bio: 'OAB/SP 234.567 - Pós-graduada em direito de família e sucessões, com atuação humanizada.'
+      specialty: ['Direito Civil', 'Direito de Família', 'Direitos Humanos', 'Violência Doméstica'],
+      image: Advogado2,
+      bio: 'OAB/SP 440.900 - Especialista em direito civil e de família.'
     },
    
   ];
@@ -26,7 +29,7 @@ export function Team() {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl text-[#5E0D13] mb-4">
-            Nossa Equipe
+            Advogados
           </h2>
           <div className="w-24 h-1 bg-[#AC8B57] mx-auto mb-6"></div>
           <p className="text-lg text-gray-700 max-w-3xl mx-auto">
@@ -39,14 +42,14 @@ export function Team() {
           {teamMembers.map((member, index) => (
             <div
               key={index}
-              className="group bg-gradient-to-b from-white to-gray-50 rounded-lg overflow-hidden border-2 border-[#AC8B57]/20 hover:border-[#AC8B57] hover:shadow-xl transition-all"
+              className="group rounded-lg overflow-hidden border-2 border-[#AC8B57]/20 hover:border-[#AC8B57] hover:shadow-xl transition-all bg-gradient-to-br from-[#5E0D13] to-[#2E0506]"
             >
               {/* Image Container */}
               <div className="relative h-80 overflow-hidden">
                 <ImageWithFallback
                   src={member.image}
                   alt={member.name}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  className="w-full h-full object-cover object-[center_20%] group-hover:scale-110 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#2E0506] via-transparent to-transparent opacity-60"></div>
               </div>
@@ -57,9 +60,15 @@ export function Team() {
                   {member.name}
                 </h3>
                 <p className="text-[#AC8B57] mb-2">{member.role}</p>
-                <p className="text-[#DCC48F]/80 text-sm mb-3">
-                  {member.specialty}
-                </p>
+                <div className="text-[#DCC48F]/80 text-sm mb-3">
+                  {Array.isArray(member.specialty) ? (
+                    member.specialty.map((spec, i) => (
+                      <div key={i}>{spec}</div>
+                    ))
+                  ) : (
+                    member.specialty
+                  )}
+                </div>
                 <p className="text-[#DCC48F]/70 text-sm mb-4">
                   {member.bio}
                 </p>
