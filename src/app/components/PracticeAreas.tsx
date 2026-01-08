@@ -1,4 +1,4 @@
-import { Users2, Home, FileText, Gavel } from 'lucide-react';
+import { Users2, Home, FileText, Gavel, Wallet, Shield } from 'lucide-react';
 
 export function PracticeAreas() {
   const areas = [
@@ -23,12 +23,12 @@ export function PracticeAreas() {
       description: 'Defesa em processos criminais; consultoria e assessoria jurídica penal.'
     },
     {
-      icon: Gavel,
+      icon: Wallet,
       title: 'Direito Previdenciário',
       description: 'Aposentadorias; pensões; auxílios; planejamento previdenciário e revisões de benefícios.'
     },
     {
-      icon: Gavel,
+      icon: Shield,
       title: 'Direitos Humanos',
       description: 'Combate à discriminação; defesa de minorias; proteção contra abusos de autoridade e garantias fundamentais.'
     }
