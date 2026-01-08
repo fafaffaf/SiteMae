@@ -1,8 +1,8 @@
 
 import { ArrowRight } from 'lucide-react';
 import { ImageWithFallback } from './image/ImageWithFallback';
-import FundoImg from '/assets/ImagemFundoHero.png';
-import Logo from '/assets/Logo.png';
+import FundoImg from '../../assets/ImagemFundoHero.png';
+import Logo from '../../assets/logo.png';
 
 export function Hero() {
   return (
