@@ -38,7 +38,7 @@ export function Contact() {
     {
       icon: Mail,
       title: 'E-mail',
-      content: 'valdison_2008@hotmail.com\nmelissa.carla@hotmail.com'
+      content: 'advocaciapereiraesilvasp@gmail.com\nvaldison_2008@hotmail.com\nmelissa.carla@hotmail.com'
     },
     {
       icon: Clock,
