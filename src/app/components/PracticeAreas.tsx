@@ -21,6 +21,16 @@ export function PracticeAreas() {
       icon: Gavel,
       title: 'Direito Penal',
       description: 'Defesa em processos criminais; consultoria e assessoria jurídica penal.'
+    },
+    {
+      icon: Gavel,
+      title: 'Direito Previdenciário',
+      description: 'Aposentadorias; pensões; auxílios; planejamento previdenciário e revisões de benefícios.'
+    },
+    {
+      icon: Gavel,
+      title: 'Direitos Humanos',
+      description: 'Combate à discriminação; defesa de minorias; proteção contra abusos de autoridade e garantias fundamentais.'
     }
   ];
 
@@ -46,9 +56,7 @@ export function PracticeAreas() {
             return (
               <div
                 key={index}
-                className={`group bg-white p-8 rounded-lg border-2 border-[#AC8B57]/20 hover:border-[#AC8B57] hover:shadow-xl transition-all cursor-pointer ${
-                  index === 3 ? 'lg:col-start-2' : ''
-                }`}
+                className="group bg-white p-8 rounded-lg border-2 border-[#AC8B57]/20 hover:border-[#AC8B57] hover:shadow-xl transition-all cursor-pointer"
               >
                 <div className="bg-gradient-to-br from-[#5E0D13] to-[#2E0506] w-16 h-16 rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                   <Icon className="w-8 h-8 text-[#DCC48F]" />
