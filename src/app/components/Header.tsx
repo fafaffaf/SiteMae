@@ -1,5 +1,6 @@
 import { Scale, Menu, X } from 'lucide-react';
 import { useState } from 'react';
+import LetrasLogo from '/assets/LetrasLogo.png';
 
 interface HeaderProps {
   activeSection: string;
@@ -34,7 +35,10 @@ export function Header({ activeSection, setActiveSection }: HeaderProps) {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex items-center gap-1 cursor-pointer -ml-60" onClick={() => handleNavClick('home')}>
-            <img src="/assets/LetrasLogo.png" alt="Pereira & Silva Advocacia"  className="h-30 -my-2"
+            <img 
+              src={LetrasLogo} 
+              alt="Pereira & Silva Advocacia"  
+              className="h-30 -my-2"
             />
           </div>
 
